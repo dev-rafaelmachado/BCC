@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    background: #24252a;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body::-webkit-scrollbar {
+    width: 4px;               /* width of the entire scrollbar */
+  }
+  
+
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 70);    /* color of the scroll thumb */
+         /* roundness of the scroll thumb */
+     /* creates padding around scroll thumb */
+  }
+
+li, a, button{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+header{
+
+    width: 100%;
+    background-color:#24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    height: 15%;
+    width: 12%;
+}
+
+.nav__links{
+    list-style:none;
+}
+
+.nav__links li { 
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);;
+}
+
+main{
+    
+    border-bottom: 0.2px solid white;
+}
+.container-home{
+    background: #24252a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85vh;
+    margin-bottom: 15px;
+}
+
+.Texto{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Tt{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+}
+.St{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #A3A3A3;
+}
+
+.perfil{
+    height: 28%;
+    width: 28%;
+    border-radius: 5px;
+}
+
+.container-sobre{
+    background: #28292b;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.QmSouEu{
+    display: flex;
+    align-items: center;
+    gap: 337px;
+    
+}
+
+.tt2{
+    margin-top: -100px;
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    color: #C5C5C5;
+}
+
+.texto{
+    width: 48%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+    display: flex;
+    align-items: flex-end;
+    color: #A3A3A3;
+}
+.container-formacao{
+    padding: 100px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+
+}
+.card-1{
+    background: #3C3E46;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+    transition: all 0.2s;
+}
+.card-2{
+    background: #3C3E46;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+    transition: all 0.2s;
+}
+.tt3{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    color: #C5C5C5;
+}
+.texto1{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 44px;
+    margin-left: 11%;
+    color: #FFFFFF;
+}
+
+.container-portifolio{
+    background: #28292b;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+
+}
+.tt4{
+    margin-top: -100px;
+    position: absolute;
+    align-self: center;
+    margin-top: 1%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    color: #C5C5C5;
+
+}
+
+.cartao{
+    width: 320px;
+    min-height: 101%;
+    background-color: #17181C;
+    box-shadow: 0px 2px 18px #0a0b0fcc;
+    border-radius: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.St_cartao{
+    font-size: 18px;
+    color:#9c9c9c;
+}
+.texto_cartao{
+    font-size: 16px;
+    color:#9c9c9c;
+    width: 12%;
+}
+
+.midia_cartao1{
+    background: url("/imgs/dogTask.png") center/cover;
+    height: 200px;
+    width: 100%;
+}
+.midia_cartao2{
+    background: url("/imgs/BikiniBtParty.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+.midia_cartao3{
+    background: url("/imgs/FoleFollow.png ") center/cover;
+    height: 200px;
+    width: 100%;
+}
+.midia_cartao4{
+    background: url("imgs/PedraPapekTesoura.png")center/cover;
+    height: 200px;
+    width: 100%;
+}
+.midia_cartao5{
+    background: url("imgs/maquinaDeBebidas.jpg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+.midia_cartao6{
+    background: url("imgs/smartcity.jpeg") center/cover;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+.topcartao{
+    padding: 20px;
+
+}
+.bottomcartao{
+
+    padding: 20px;
+
+}
+
+
+.BTgithub{
+    margin-top: 10%;
+    background-color: #575757;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    
+  }
+  
+  .BTgithub:hover {
+    background-color: rgb(105, 105, 105);
+  }
+  
+  .BTgithub:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .BTgithub:focus-visible {
+    box-shadow: none;
+  }
+
+
+
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 10vh;
+  }
