@@ -280,17 +280,17 @@ main{
 }
 
 .midia_cartao1{
-    background: url("/imgs/dogTask.png") center/cover;
+    background: url("imgs/dogTask.png") center/cover;
     height: 200px;
     width: 100%;
 }
 .midia_cartao2{
-    background: url("/imgs/BikiniBtParty.jpg") center/cover;
+    background: url("imgs/BikiniBtParty.jpg") center/cover;
     height: 200px;
     width: 100%;
 }
 .midia_cartao3{
-    background: url("/imgs/FoleFollow.png ") center/cover;
+    background: url("imgs/FoleFollow.png ") center/cover;
     height: 200px;
     width: 100%;
 }
