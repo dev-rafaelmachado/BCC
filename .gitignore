@@ -1,2 +1,6 @@
-
-a
+.replit
+replit.nix
+venv/
+.config/
+/venv
+/.config
