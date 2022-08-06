@@ -3,7 +3,13 @@
 # Função para fazer as contas
 def calc(opera,cj1,cj2):
   if opera == 'U': # União
-    any
+    rtn = []
+    for i in range(len(cj1)):
+        rtn.append(cj1[i])
+    for i in range(len(cj2)):
+        if cj2[i] not in rtn:
+            rtn.append(cj2[i])
+    print("União: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
   elif opera == 'I': # Interseção
     any
   elif opera == 'D': # Diferença
@@ -11,14 +17,13 @@ def calc(opera,cj1,cj2):
   elif opera == 'C': # Produto Cartesiano
     any
 
-#Abrinco o arquivo e lendo as linhas
+#Abrindo o arquivo e lendo as linhas
 file = open('2Período/R.P.N.D/Atv1_Conjuntos/content.txt', 'r') 
 data = file.readlines()
 
 nOpr = int(data[0]. replace("\n", "")) # Número de Operações
 vSm = ['U','I','D','C'] # operações aceitas
 
-matriz = [] # Definindo uma matriz vazia
 cont = 1 # Indice geral de linhas
 
 # Criando uma matriz onde cada linha é um bloco de operação
@@ -32,7 +37,7 @@ for j in range(nOpr):
       arr = element.split(", ")
       vetorAux.append(arr)
     cont += 1
-  matriz.append(vetorAux)
+  calc(vetorAux[0],vetorAux[1],vetorAux[2])
 
-print(matriz)
+
 
