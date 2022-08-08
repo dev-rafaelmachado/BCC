@@ -9,17 +9,17 @@ def calc(opera,cj1,cj2):
     for i in range(len(cj2)):
         if cj2[i] not in rtn:
             rtn.append(cj2[i])
-    print("União: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
+    print("União: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn, "\n")
   elif opera == 'I': # Interseção
     for i in range(len(cj1)):
       if cj1[i] in cj2:
         rtn.append(cj1[i])
-    print("Interseção: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
+    print("Interseção: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn, "\n")
   elif opera == 'D': # Diferença
     for i in range(len(cj1)):
       if not cj1[i] in cj2:
         rtn.append(cj1[i])
-    print("Diferença: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
+    print("Diferença: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn, "\n")
   elif opera == 'C': # Produto Cartesiano
     for i in range(len(cj1)):
       for j in range(len(cj2)):
@@ -27,7 +27,7 @@ def calc(opera,cj1,cj2):
         auxVt.append(cj1[i])
         auxVt.append(cj2[j])
         rtn.append(auxVt)
-    print("Produto Cartesiano: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
+    print("Produto Cartesiano: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn, "\n")
         
 #Abrindo o arquivo e lendo as linhas
 file = open('2Período/R.P.N.D/Atv1_Conjuntos/content.txt', 'r') 
