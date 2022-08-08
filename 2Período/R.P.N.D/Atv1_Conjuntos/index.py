@@ -2,8 +2,8 @@
 
 # Função para fazer as contas
 def calc(opera,cj1,cj2):
+  rtn = []
   if opera == 'U': # União
-    rtn = []
     for i in range(len(cj1)):
         rtn.append(cj1[i])
     for i in range(len(cj2)):
@@ -11,17 +11,29 @@ def calc(opera,cj1,cj2):
             rtn.append(cj2[i])
     print("União: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
   elif opera == 'I': # Interseção
-    any
+    for i in range(len(cj1)):
+      if cj1[i] in cj2:
+        rtn.append(cj1[i])
+    print("Interseção: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
   elif opera == 'D': # Diferença
-    any
+    for i in range(len(cj1)):
+      if not cj1[i] in cj2:
+        rtn.append(cj1[i])
+    print("Diferença: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
   elif opera == 'C': # Produto Cartesiano
-    any
-
+    for i in range(len(cj1)):
+      for j in range(len(cj2)):
+        auxVt = []
+        auxVt.append(cj1[i])
+        auxVt.append(cj2[j])
+        rtn.append(auxVt)
+    print("Produto Cartesiano: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn)
+        
 #Abrindo o arquivo e lendo as linhas
 file = open('2Período/R.P.N.D/Atv1_Conjuntos/content.txt', 'r') 
 data = file.readlines()
 
-nOpr = int(data[0]. replace("\n", "")) # Número de Operações
+nOpr = int(data[0].replace("\n", "")) # Número de Operações
 vSm = ['U','I','D','C'] # operações aceitas
 
 cont = 1 # Indice geral de linhas
@@ -38,6 +50,3 @@ for j in range(nOpr):
       vetorAux.append(arr)
     cont += 1
   calc(vetorAux[0],vetorAux[1],vetorAux[2])
-
-
-
