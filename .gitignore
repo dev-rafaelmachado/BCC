@@ -2,5 +2,7 @@
 replit.nix
 venv/
 .config/
+.ccls-cache/
 /venv
 /.config
+/..ccls-cache
