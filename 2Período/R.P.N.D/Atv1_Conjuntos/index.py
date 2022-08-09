@@ -28,9 +28,26 @@ def calc(opera,cj1,cj2):
         auxVt.append(cj2[j])
         rtn.append(auxVt)
     print("Produto Cartesiano: conjunto 1",cj1,"conjunto 2",cj2,"Resultado:",rtn, "\n")
-        
+
+# Seletor de Arquivos
+print("\n (1) para o aquivo 1; \n (2) para o arquivo 2; \n (3) para o arquivo 3; \n (4) para adicionar outro arquivo")
+choice = int(input(": "))
+while choice < 1 or choice > 4:
+      print("Inválido, tente novamente")
+      choice = int(input(":"))
+if choice == 1:
+  path = '2Período/R.P.N.D/Atv1_Conjuntos/content-1.txt'
+elif choice == 2:
+      path = '2Período/R.P.N.D/Atv1_Conjuntos/content-2.txt'
+elif choice == 3:
+  path = '2Período/R.P.N.D/Atv1_Conjuntos/content-3.txt'
+else:
+  sPath = input("Coloque o arquivo na pasta Atv1_Conjuntos e digite seu nome aqui (exemplo: contas.txt): ")
+  path = '2Período/R.P.N.D/Atv1_Conjuntos/' + sPath
+print("\nRESULTADOS:\n")
+
 #Abrindo o arquivo e lendo as linhas
-file = open('2Período/R.P.N.D/Atv1_Conjuntos/content.txt', 'r') 
+file = open(path, 'r') 
 data = file.readlines()
 
 nOpr = int(data[0].replace("\n", "")) # Número de Operações
