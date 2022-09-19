@@ -1,30 +1,24 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
+  
     char letras[10];
-
     puts("Digite 10 letras:");
-
-    for (int i = 0; i < 10; i++)
-    {
-        printf("letra %d: ", i+1);
-        letras[i] = getchar();
-        getchar(); // skip the ENTER char
+  
+    for (int index = 0; index < 10; index++){
+        printf("letra %d: ", index+1);
+        scanf("%2s", &letras[index]);
+        
     }
 
     puts("As 10 letras digitadas foram:");
-
-    int i = 0;
-    while (i < 10)
-    {
-        putchar(letras[i]);
-        i++;
+    for(int index = 0; index < 10; index++){
+        putchar(letras[index]);
     }
     putchar('\n');
 
     puts("Digite uma sequência de, no máximo, 9 letras:");
-    scanf("%s", letras);
+    scanf("%10s", letras);
     printf("Sequência digitada: %s", letras);
     putchar('\n');
 }

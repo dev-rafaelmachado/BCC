@@ -60,7 +60,7 @@ int main()
     {
         char c = getchar();
         if (c == LF)
-            nao_fim_linha = 0;
+            nao_fim_linha = 0; 
     }
     printf("Sobrenome armazenado: %s\n", sobrenome);
 
@@ -118,3 +118,4 @@ int main()
 
     return 0;
 }
+

@@ -4,20 +4,25 @@ equação de segundo grau */
 #include <stdio.h>
 #include <math.h>
 
-int main() {   float a, b, c;
-    puts("Digite a: "); scanf("%f", &a);
-        puts("Digite b: "); scanf("%f", &b);
-puts("Digite c: "); scanf("%f", &c);
-    float d = pow(b,2)-4*
-    a*c;
-      printf("%f\n", d);
-  if (d<0) puts("Nao existe raiz!"); else 
-    if (d==0) {puts("Existe uma raiz:");
-    float x = -b/(2* a); printf("%f\n", x);
-     } else {
+int main() {   
+  float vA, vB, vC;
+    
+  puts("Digite a: "); scanf("%f", &vA); // Atribuindo valor para A
+  puts("Digite b: "); scanf("%f", &vB); // Atribuindo valor para B
+  puts("Digite c: "); scanf("%f", &vC); // Atribuindo valor para C
+    
+  float delta = pow(vB,2) - 4 * vA * vC; printf("%f\n", delta); // Calculando Delta
+    
+  if (delta < 0) 
+    puts("Nao existe raiz!"); 
+  else if (delta == 0) {
+    puts("Existe uma raiz:");
+    float vX = -vB/(2* vA); printf("%f\n", vX); // Calculando a raiz
+  } else {
     puts("Existem duas raizes:");
-    float rd = pow(d,0.5);
-    float x = (-b + rd)/(2*a); printf("%f\n", x);
-    x = (-b - rd)/(2*a); printf("%f\n", x);}
-       return 0;
+    float raizDelta = pow(delta,0.5); // 
+    float vX = (-vB + raizDelta )/(2*vA); printf("%f\n", vX); // Calculando a raiz x1
+    vX = (-vB -raizDelta ) / (2*vA); printf("%f\n", vX); // Calculando a raiz x2
+  }
+  return 0;
 }

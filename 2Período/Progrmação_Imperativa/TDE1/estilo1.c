@@ -2,17 +2,17 @@
 
 int main()
 {
-    const char l = 'H'; // letra a ser impressa
-    const int I = 10; // número de vezes que a letra deve ser impressa
-    for (int i = 1; i <= I; i++)
-        putchar(l);
+    const char printChar = 'H'; // letra a ser impressa
+    const int nPrint = 10; // número de vezes que a letra deve ser impressa
+    int num = nPrint; // valor a ser impresso
+    
+  for (int i = 1; i <= nPrint; i++)
+        putchar(printChar);
     putchar('\n');
 
-    int O = I; // valor a ser impresso
-    while (O > 0)
-    {
-        printf("%d ", O);
-        O--;
+    while (num > 0){
+        printf("%d ", num);
+        num--;
     }
     putchar('\n');
 

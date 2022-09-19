@@ -2,27 +2,42 @@
 
 int main()
 {
-    float _a1, _a2; // operandos
-    double RESULTADO = 0; // resultado da operação
-    char op_char; // operador na forma de caracter
+    float oper1, oper2; // operandos
+    double result = 0; // result da operação
+    char operador; // operador na forma de caracter
+  
     puts("Digite o primeiro operando: ");
-    scanf("%f", &_a1);
+    scanf("%f", &oper1);
+    
     puts("Digite o segundo operando: ");
-    scanf("%f", &_a2);
-    getchar();
+    scanf("%f", &oper2);
+    
+    getchar(); // Consumir o Enter
+  
     puts("Digite um operador (+, -, *, /): ");
-    op_char = getchar();
-    if (op_char == '+')
-        RESULTADO = _a1 + _a2;
-    else if (op_char == '-')
-        RESULTADO = _a1 - _a2;
-    else if (op_char == '*')
-        RESULTADO = _a1 * _a2;
-    else if (op_char == '/')
-        RESULTADO = _a1 / _a2;
-    else
-        puts("Operador inválido");
+    operador = getchar();
 
-    printf("Resultado = %.2f\n", RESULTADO);
+    switch(operador){
+      case '+':
+        result = oper1 + oper2;
+        break;
+      
+      case '-':
+        result = oper1 - oper2;
+        break;
+      
+      case '*':
+        result = oper1 * oper2;
+        break;
+      
+      case '/':
+        result = oper1 / oper2;
+        break;
+      
+      default:
+        puts("Operador inválido");
+    }
+
+    printf("Resultado = %.2f\n", result);
     return 0;
 }

@@ -2,14 +2,14 @@
 
 int main()
 {
-    const char prompt[] = "Digite o valor da conta %d: ";
+    const char * const prompt = "Digite o valor da conta %d: ";
     double total = 0;
     int numero_de_contas;
+    
     printf("Digite o número de contas: ");
     scanf("%d", &numero_de_contas);
 
-    for (int i = 1; i <= numero_de_contas; i++)
-    {
+    for(int i = 0; i < (numero_de_contas+1); i++){
         printf(prompt, i);
         double valor;
         scanf("%lf", &valor);
