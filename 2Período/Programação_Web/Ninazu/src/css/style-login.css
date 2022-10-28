@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5ECE4;
+}
+
+.ladoEsquerdo{
+    width: 80vw;
+    height: 100vh;
+    padding: 70px 90px 70px 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #D8B597;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+
+    gap: 5%;
+}
+
+.Form h2{
+    font-family: 'Text Me One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 7%;
+}
+
+.Form input{
+    width: 75%;
+    height: 100px;
+    padding: 40px;
+
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 37px;
+}
+
+.Form button{
+    width: 50%;
+    height: 80px;
+
+    background: #BF9A6C;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.Form a{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #492C1D;
+    text-decoration: inherit;
+    font-style: normal;
+    margin: -12px;
+}
+
+.img-lateral{
+    width: 100%;
+    height: 100%;
+
+    background: url(../../imgs/LoginScreen.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.plant-SVG{
+    transform: translateX(150%);
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px){
+    .img-lateral{
+        opacity: 0;
+        width: 0%;
+        height: 0%;
+    }
+    .ladoEsquerdo{
+        width: 100vw;
+        height: 100vh;
+    }
+    .Form input{
+        transform: scale(1.2);
+    }
+    .Form h2{
+        transform: scale(1.6);
+    }
+    .Form button{
+        transform: scale(1.2);
+    }
+    .Form a{
+        transform: scale(1.3);
+    }
+}
+
