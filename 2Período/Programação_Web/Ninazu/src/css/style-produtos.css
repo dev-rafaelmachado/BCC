@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d4cfcb;
+    border-radius: 10px;
+}
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139);
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    background: #D0A79A;
+
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 4%;
+
+    gap: 50px;
+}
+
+header .actions{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8%;
+    gap: 10%;
+}
+
+header .options{
+    width: 100%;
+    height: 70px;
+    background: #E1C0B8;
+}
+
+header .options input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+
+    padding-left: 50px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #222222;
+}
+
+header .options datalist{
+    width: 100%;
+}
+
+header .options option{
+    width: 100%;
+}
+
+.catalogo{
+    width: 100%;
+    padding: 80px;
+    background: #F5ECE4;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Card */
+
+.card-produto{
+    width: 350px;
+    height: 570px;
+    background: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.card-produto h2{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.card-produto h5{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+
+    color: #00FF38;
+
+}
+
+.card-produto button{
+    width: 100%;
+    height: 40px;
+    background: #42FF00;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* -------- */
+
+footer{
+    background: #463B37;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer h4{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+
+    color: #222222;
+}
+.redes{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.face{
+    margin-right: 10px;
+}
+
+.redes a{
+    width: 80px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

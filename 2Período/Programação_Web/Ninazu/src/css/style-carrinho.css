@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F5ECE4;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d4cfcb;
+    border-radius: 10px;
+}
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139);
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    background: #D0A79A;
+
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 4%;
+
+    gap: 50px;
+}
+
+header .actions{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 8%;
+    gap: 10%;
+}
+
+header .actions button{
+    width: 216px;
+    height: 65px;
+
+    background: #92955D;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+header h3{
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #5A3B2C;
+
+}
+
+.lista{
+    width: 100%;
+    min-height: 100%;
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+.card-produto{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.card-produto img{
+    width: 20%;
+
+}
+.card-produto input{
+    width: 20%;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background: #F0E7DF;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.card-produto span{
+    width: 40%;
+}
+.card-produto span h2{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+
+    color: #767676;
+
+}
+.card-produto span h5{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #00FF38;
+
+}
+.card-produto div{
+    display: flex;
+    align-items: center;
+}
+
+.card-produto button{
+    background: none;
+    border: none;
+    outline: none;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.finali{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+}
+
+.finali h4{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+}
+
+.finali button{
+
+    width: 40%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #42FF00;
+    border-radius: 10px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer{
+    background: #463B37;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer h4{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+
+    color: #222222;
+}
+.redes{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.face{
+    margin-right: 10px;
+}
+
+.redes a{
+    width: 80px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
