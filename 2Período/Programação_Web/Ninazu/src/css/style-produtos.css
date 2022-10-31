@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #F5ECE4;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -77,8 +81,13 @@ header .options option{
     width: 100%;
 }
 
+main{
+    background: #F5ECE4;
+}
+
 .catalogo{
     width: 100%;
+    height: auto;
     padding: 80px;
     background: #F5ECE4;
     display: flex;
@@ -101,15 +110,27 @@ header .options option{
     justify-content: space-between;
 }
 
+.card-produto img{
+    width: auto;
+    height: 300;
+}
+
+.card-produto div{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-produto h2{
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 24px;
     letter-spacing: 0.05em;
 
-    color: #000000;
+    color: #4e4e4e;
 }
 
 .card-produto h5{

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Produtos - Ninazu</title>
     <link rel="stylesheet" href="../css/style-produtos.css" />
-    <script src="../js/main.js"></script>
+    <script src="../js/produtos.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,14 +22,16 @@
                 </svg></a>
         </div>
         <div class="options"> 
-            <label>
-                <input placeholder="Escolha uma categoria" list="types">
-            </label> 
-
+                <label>
+                    <form id="formType" onsubmit=" return search()">
+                        <input name="type" id="typeID"placeholder="Escolha uma categoria" list="types" value="Todas">
+                    </form>
+                </label> 
             <datalist id="types">
-                <option value="Comida"></option>
-                <option value="Assessórios"></option>
-                <option value="Roupa"></option>
+                <option value="Todas"></option>
+                <option value="Alimentos"></option>
+                <option value="Acessórios"></option>
+                <option value="Roupas"></option>
             </datalist>
         </div>
         <div class="actions">
@@ -37,14 +39,7 @@
         </div>
     </header>
     <main>
-        <section class="catalogo">
-        <!-- Card Test -->
-        <div class="card-produto">
-            <img src="../../imgs/produto1.png" alt="">
-            <h2> (TOP) Whey Protein Concentrado (1KG) - Growth Supplements </h2>
-            <h5> 99,90 </h5>
-            <button class="bt-adcCarrinho">Adicionar ao carrinho</button>
-        </div>
+        <section id="catalogo" class="catalogo">
         </section>
     </main>
     <footer>

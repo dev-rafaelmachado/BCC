@@ -3,20 +3,20 @@
     <meta charset="UTF-8" />
     <title>Cadastro - Ninazu</title>
     <link rel="stylesheet" href="../css/style-cadastro.css" />
-    <script src="../js/cadastro.js"></script>
+    <script src="../js/cadastro.js" defer></script>
   </head>
   <body>
     <div class="img-lateral"></div>
     <div class="ladoDireito">
       <form class="Form" id="formRegistro">
-        <h2>Cadastro</h2>
-        <input name="nome" type="text" placeholder="Nome" />
-        <input name="email" type="email" placeholder="E-mail" />
-        <input name="cpf" type="text" placeholder="CPF" />
-        <input name="senha" type="password" placeholder="Senha" />
-        <input name="cfsenha" type="password" placeholder="Confirmar Senha" />
-        <button onclick="sendData()" type="button">Confirmar</button>
-        <a href="login.html">Fazer Login</a>
+          <h2>Cadastro</h2>
+          <input name="nome" type="text" placeholder="Nome"/>
+          <input name="email" type="email" placeholder="E-mail"/>
+          <input name="cpf" type="text" placeholder="CPF"/>
+          <input name="senha" type="password" placeholder="Senha"/>
+          <input name="cfsenha" type="password" placeholder="Confirmar Senha"/>
+          <button onclick="cadastro()" type="button" > Confirmar </button>
+          <a href="login.html">Fazer Login</a>
       </form>
     </div>
   </body>
