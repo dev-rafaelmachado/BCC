@@ -18,7 +18,7 @@
         $resposta[$i]["id_produto"] = $registro["id"];
         $resposta[$i]["nome"] = $registro["nome"];
         $resposta[$i]["preco"] = $registro["preco"];
-        $resposta[$i]["img_link"] = $registro["img"];
+        $resposta[$i]["img_link"] = $registro["img_link"];
         $resposta[$i]["categoria"] = $registro["categoria"];
 
         $i++;

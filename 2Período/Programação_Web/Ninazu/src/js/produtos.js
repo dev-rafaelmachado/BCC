@@ -10,7 +10,7 @@ console.log("Token: " + Token)
 
 
 if(Token == null){
-    window.location.href = "http://192.168.1.2/Ninazu/src/html/login.html";
+    window.location.href = "login.html";
 }
 
 function listarProdutos() {
@@ -62,7 +62,7 @@ listarProdutos()
 
 
 function adcProdutoCarrinho(p_idProduto){
-
+    
     let dataProduto = new FormData();
     dataProduto.append("cpfUser", Token);
     console.log(Token)

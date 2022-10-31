@@ -19,23 +19,31 @@
         $i = 0;
         while($registro = mysqli_fetch_assoc($registros)){
             $id_produto = $registro["id_produto"];
-            $quantidade = $registro["id_produto"];
+            $quantidade = $registro["quantidade"];
             
             $query = "SELECT * FROM ninazu.produtos where id = $id_produto";
             $otherRegistros = mysqli_query($conexao, $query);
+            
             while($otherRegistro = mysqli_fetch_assoc($otherRegistros)){
-                $resposta[$i]["id_produto"] = $otherRegistro["id"];
-                $resposta[$i]["nome"] = $otherRegistro["nome"];
-                $resposta[$i]["preco"] = $otherRegistro["preco"];
-                $resposta[$i]["img_link"] = $otherRegistro["img"];
-                $resposta[$i]["categoria"] = $otherRegistro["categoria"];
+                $resposta["Carrinho"][$i]["id_produto"] = $otherRegistro["id"];
+                $resposta["Carrinho"][$i]["nome"] = $otherRegistro["nome"];
+                $resposta["Carrinho"][$i]["preco"] = $otherRegistro["preco"];
+                $resposta["Carrinho"][$i]["img_link"] = $otherRegistro["img_link"];
+                $resposta["Carrinho"][$i]["categoria"] = $otherRegistro["categoria"];
+                $resposta["Carrinho"][$i]["quantidade"] = $quantidade;
             }
             $i++;
-        };
+        }
 
-
-        $objetoJSON = json_encode($resposta);
+        if(mysqli_num_rows($registros) == 0) {
+            $resposta["status"] = "n";
+            $objetoJSON = json_encode($resposta);
+        }else{
+            $resposta["status"] = "s";
+            $objetoJSON = json_encode($resposta);
+        }
         echo $objetoJSON;
+        
     };
 
     

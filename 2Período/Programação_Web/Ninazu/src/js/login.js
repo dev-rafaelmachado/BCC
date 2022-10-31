@@ -33,7 +33,7 @@ function login() {
         alert("Email e/ou senha incorretos")
       } else {
         sessionStorage.setItem('loginToken', obj.cpf);
-        window.location.href = "http://192.168.1.2/Ninazu/src/html/main.html";
+        window.location.href = "main.html";
       }
     });
   }

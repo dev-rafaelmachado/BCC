@@ -11,8 +11,26 @@
         return $resposta;
     };
     function adcProduto($p_idPedido,$p_idProduto,$conexao){
-        $query = "insert into ninazu.carrinho (id_produto, id_pedido, quantidade) values ($p_idProduto,$p_idPedido,1)";
-        mysqli_query($conexao, $query);
+        $query = "select case when (select count(*) from ninazu.carrinho where id_pedido = $p_idPedido and id_produto = $p_idProduto) > 0 then 'Tem' else 'não tem' end as resposta";
+        $resultados = mysqli_query($conexao, $query);
+        
+        while($registro = mysqli_fetch_assoc($resultados)){
+            $respostaIF = $registro['resposta'];
+        }
+
+        if($respostaIF == "Tem"){
+            echo $p_idPedido . " " . $p_idProduto . " ------- ";
+            $query = "UPDATE ninazu.carrinho SET quantidade = quantidade + 1 where id_pedido = $p_idPedido and id_produto = $p_idProduto";
+            mysqli_query($conexao, $query);
+            echo "FOI1";
+        } else{
+            echo $p_idPedido . " " . $p_idProduto;
+            $query = "insert into ninazu.carrinho (id_produto, id_pedido, quantidade) values ($p_idProduto,$p_idPedido,1)";
+            mysqli_query($conexao, $query);
+            echo "FOI2";
+        };
+        
+        
     };
 
     $cpfUser = $_POST['cpfUser']; // & Define o CPF (token) do USER

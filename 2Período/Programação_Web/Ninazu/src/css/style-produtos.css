@@ -110,6 +110,7 @@ main{
     justify-content: space-between;
 }
 
+
 .card-produto img{
     width: auto;
     height: 300;
@@ -121,6 +122,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    transition: 0.3s;
+}
+
+.card-produto div:hover{
+    transform: scale(1.17);
 }
 
 .card-produto h2{
@@ -147,7 +154,7 @@ main{
 
 .card-produto button{
     width: 100%;
-    height: 40px;
+    height: 60px;
     background: #42FF00;
     border-radius: 10px;
     border: none;
@@ -162,6 +169,16 @@ main{
 
     color: #FFFFFF;
     cursor: pointer;
+    transition: 0.13s;
+}
+
+.card-produto button:hover{
+    background: #36c602;
+}
+
+.card-produto button:active {
+    transform: scale(0.55);
+    box-shadow: 3px 2px 25px 1px rgba(0,0,0,0.25);
 }
 
 /* -------- */
