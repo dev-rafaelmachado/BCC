@@ -46,9 +46,7 @@ function comprar() {
   var valorTT = valorTotal;
   valorTT = valorTT.replace(",", ".");
   valorTT = valorTT.split(" ");
-
   if (tipoPag == "Cartão de Crédito") {
-    console.log("TESTE");
     // * ->-->- REGEX ->-->- //
     let verefi = 0;
     for (let index = 0; index < 4; index++) {
@@ -82,7 +80,8 @@ function comprar() {
         const data = new FormData(formCompELE);
         data.append("cpfUser", Token);
         data.append("tipoPag", tipoPag);
-        data.append("valorTT", parseFloat(valorTT[2]));
+        data.append("valorTT", parseFloat(valorTT[3]));
+        
 
         // ~ Envia utilizando o metodo post os dados do formulario para o Back-end
         fetch("../../backend/gravarCompra.php", {
@@ -104,7 +103,7 @@ function comprar() {
     const data = new FormData();
     data.append("cpfUser", Token);
     data.append("tipoPag", tipoPag);
-    data.append("valorTT", parseFloat(valorTT[2]));
+    data.append("valorTT", parseFloat(valorTT[3]));
 
     // ~ Envia utilizando o metodo post os dados cpf, tipoPag, valor Total para o Back-end
     fetch("../../backend/gravarCompra.php", {
@@ -112,9 +111,9 @@ function comprar() {
       body: data,
     }).then(async (resp) => {
       // ~ [Promisse]
-      const obj = await resp.json(); // ^ Espere a resposta chegar e guarde em objeto
+      const obj1 = await resp.json(); // ^ Espere a resposta chegar e guarde em objeto
 
-      if (obj["mensagem"] == "Gravado com sucesso") {
+      if (obj1["mensagem"] == "Gravado com sucesso") {
         // ? Caso o status code esteja positivo redirecione para a pagina main
         window.location.href = "main.html";
       }

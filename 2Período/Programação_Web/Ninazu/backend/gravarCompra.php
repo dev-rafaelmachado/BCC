@@ -26,7 +26,7 @@
     $cpfUser = $_POST['cpfUser']; // ^ Define o CPF do usuario
     $tipoPag = $_POST['tipoPag']; // ^ Define o Tipo de pagamento
     $valorTT = $_POST['valorTT']; // ^ Define o valor total
-
+    
     $idPedido = loadPedido($cpfUser, $conexao); // * Define o ID do pedido do usuario
     finalizaPedido($idPedido, $conexao); // * Fecha o pedido do usuario
 
