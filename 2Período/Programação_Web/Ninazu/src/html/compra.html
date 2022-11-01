@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Produtos - Ninazu</title>
     <link rel="stylesheet" href="../css/style-compra.css" />
-    <script src="../js/main.js"></script>
+    <script src="../js/compra.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,23 +28,21 @@
     </header>
 
     <main>
-        <form class="formCompra" id="formCompra">
+        <div class="formCompra" id="formCompra">
+            <h2 id="ttPreco"> Total: 0,00 </h2>
             <label>
-                <input id="metdPag" name="metdPag" placeholder="Método de pagamento" list="types">
+                <input id="metdPag" placeholder="Método de pagamento" list="types">
             </label> 
             <datalist id="types">
                 <option value="Cartão de Crédito"></option>
                 <option value="Pix"></option>
             </datalist>
-            <div>
-                <input type="text" placeholder="Número do Cartão">
-                <input type="text" placeholder="Nome do Titular">
-                <input type="text" placeholder="Data de Vencimento (MM/YY)">
-                <input type="text" placeholder="CVV">
-            </div>
+            <form id="formComp">
+                
+            </form>
 
 
-        </form>
+        </>
     </main>
 
     <footer>

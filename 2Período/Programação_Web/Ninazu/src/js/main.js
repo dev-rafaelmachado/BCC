@@ -1,6 +1,6 @@
-var Token = sessionStorage.getItem('loginToken');
-console.log("Token: " + Token)
+var Token = sessionStorage.getItem("loginToken"); // ^ Define o CPF(token) do usuario pelo sessionStorage
 
-if(Token == null){
-    window.location.href = "login.html";
+if (Token == null) {
+  // ? Caso não exista um token, Redirecione para o login
+  window.location.href = "login.html";
 }

@@ -71,13 +71,14 @@ header .actions button{
 }
 
 header h3{
-    font-family: 'Arimo';
+    font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 74px;
     text-align: center;
     letter-spacing: 0.05em;
+    margin-left: 3.7%;
 
     color: #5A3B2C;
 
@@ -85,9 +86,8 @@ header h3{
 
 .lista{
     width: 100%;
-    min-height: 100%;
+    min-height: 70%;
     padding: 60px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,9 +104,8 @@ header h3{
 }
 
 .card-produto img{
-    width: auto;
-    height: 250;
-
+    max-width: 240;
+    max-height: 200;
 }
 
 .imgDiv{
@@ -158,11 +157,38 @@ header h3{
 .card-produto .qntd{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 30%;
     gap: 10px;
-    margin-left: 50px;
+    margin-left: 10px;
     transform: scale(1.1);
+}
+
+.card-produto .qntd span{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card-produto .qntd button{
+    width: 30%;
+    height: 10px;
+
+    margin-left: 20px;
+    margin-right: -15px;
+    margin-bottom: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 24px;
+    color: #425f2f;
+}
+.card-produto .qntd button:hover{
+    transform: scale(1.0);
+    color: #a87850;
 }
 
 .card-produto span h3{
@@ -241,6 +267,16 @@ header h3{
 
     color: #FFFFFF;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.finali button:hover{
+    background: #36c602;
+}
+
+.finali button:active {
+    transform: scale(0.55);
+    box-shadow: 3px 2px 25px 1px rgba(0,0,0,0.25);
 }
 
 footer{

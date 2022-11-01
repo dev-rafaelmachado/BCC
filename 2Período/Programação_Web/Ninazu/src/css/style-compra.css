@@ -72,7 +72,7 @@ header .actions button{
 }
 
 header h3{
-    font-family: 'Arimo';
+    font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -103,8 +103,13 @@ main{
     justify-content: center;
 
     gap: 70px;
-    margin-top: -130px;
+    margin-top: -330px;
     transform: scale(1.2);
+}
+
+.formCompra h2{
+    font-family: 'Ubuntu';
+    padding-top: 30;
 }
 
 #metdPag{
@@ -118,13 +123,14 @@ main{
 }
 
 .formCompra div{
+    margin-bottom: 60;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
     transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .formCompra div input{
@@ -143,7 +149,48 @@ main{
     
 }
 
+.pixCpCl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
+    width: auto;
+}
+
+.pixCpCl p{
+    width: auto;
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 16px;
+    color: rgb(59, 214, 137);
+}
+
+.btn-comp{
+    width: 200;
+    height: 40;
+    border: none;
+    outline: none;
+
+    background: #000000;
+    border-radius: 40px;
+
+    cursor: pointer;
+    color: #ffffff;
+
+    font-family: 'Ubuntu';
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.btn-comp:hover{
+    transform: scale(1.06);
+    background: #49b151;
+}
+
+#formComp{margin: 4;}
 
 
 footer{
