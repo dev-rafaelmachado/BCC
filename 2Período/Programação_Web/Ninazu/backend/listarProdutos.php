@@ -24,6 +24,7 @@
         $i++;
     }
 
+
     // * Devolve para o front-end os produtos
     $objetoJSON = json_encode($resposta);
     echo $objetoJSON;

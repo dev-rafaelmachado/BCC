@@ -12,6 +12,7 @@ function verfValues(campo) {
 
 function login() {
   // * ->-->- REGEX ->-->- //
+  
   let verefi = 0;
   for (let index = 1; index < form.children.length - 1; index++) {
     // ~ Verifica se todos os campos estáo preenchidos
@@ -31,7 +32,7 @@ function login() {
     }
   }
 
-  if (verefi >= 3) {
+  if (verefi >= 2) {
     // ? Caso todos os campos estejam preenchidos
 
     const data = new FormData(form); // * Formata os dados

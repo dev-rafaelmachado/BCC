@@ -12,7 +12,7 @@ function verfValues(campo) {
 
 function cadastro() {
   // * ->-->- REGEX ->-->- //
-  let verefi = 0;
+  let verefi = 0; 
   for (let index = 1; index < form.children.length - 1; index++) {
     // ~ Verifica se todos os campos estáo preenchidos
 

@@ -4,14 +4,14 @@ const fType = document.getElementById("formType"), // ^ Traz o elemento DOM do f
   catalogo = document.getElementById("catalogo"), // ^ Traz o elemento DOM do Catalogo (sessão da pagina para colocar os produtos)
   typeELE = document.getElementById("typeID"); // ^ Traz o elemento DOM do Input da categoria
 
-typesAceitos = ["Todas", "Alimentos", "Acessórios", "Vitaminas"]; // ^Define um array com as categorias aceitas
+typesAceitos = ["Todas", "Alimentos", "Acessórios", "Vitaminas"]; // ^ Define um array com as categorias aceitas
 
 if (Token == null) {
   // ? Caso não exista um token, Redirecione para o login
   window.location.href = "login.html";
 }
 
-function listarProdutos() {
+function listarProdutos(){ 
   // & Traz todos os produtos do banco de dados
 
   data = new FormData(fType); // * Formata os dados
@@ -50,7 +50,7 @@ function mostrarProdutos(content) {
     produto += "<h5> " + "R$ " + preco  + "</h5>";
     produto +=
       "<button onclick='adcProdutoCarrinho(" +
-      content[index]["id_produto"] +
+      content[index]["id_produto"] + 
       ")' type='button' class='bt-adcCarrinho'>Adicionar ao carrinho</button>";
     produto += "</div>";
     // * -->-->-->-->-- //
