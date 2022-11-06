@@ -64,6 +64,6 @@ function cadastro() {
           window.location.href = "login.html";
         }
       });
-    }
+    } 
   }
 }

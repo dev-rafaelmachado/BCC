@@ -14,3 +14,4 @@
     $objJSON = json_encode($resposta); echo $objJSON; //  * Envia os dados de status code para o front-end
 
 ?>
+
