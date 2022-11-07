@@ -45,11 +45,11 @@ function login() {
       // ~ [Promisse]
       const obj = await resp.json(); // ^ Espere a resposta chegar e guarde em objeto
 
-      if (obj == null) {
+      if (obj.status == "n") {
         // ? Caso não exista um retorno, Alerte para o usuario
         alert("Email e/ou senha incorretos");
       } else {
-        // ? Caso exista, salve o cpf(token) e redirecione para o main page
+        // ? Caso exista, salve o cpf e redirecione para o main page
         sessionStorage.setItem("loginToken", obj.cpf);
         window.location.href = "main.html";
       }

@@ -11,6 +11,8 @@ if (Token == null) {
   window.location.href = "login.html";
 }
 
+console.log(Token)
+
 function listarProdutos(){ 
   // & Traz todos os produtos do banco de dados
 
